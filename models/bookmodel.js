@@ -1,8 +1,4 @@
-
 import mongoose from "mongoose";
-
-
-
 
 const bookSchema = mongoose.Schema(
     {
@@ -18,9 +14,11 @@ const bookSchema = mongoose.Schema(
             type: Number,
             required: true,
         },
-        timestamps: true,
+        
+    },
+    {timestamps: true,
     }
-
+    
 );
 
-export const Book = mongoose.model('Book', bookSchema);
+export const Book = mongoose.model('Cat', bookSchema);
